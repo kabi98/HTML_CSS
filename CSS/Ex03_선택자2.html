@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ex03_선택자 </title>
+
+    <style>
+        /* 6. 결합(계층) 선택자 
+            : 자식, 자손, 일반동위(형제), 인접동위(인접형제) 
+            : > , 띄어쓰기, ~, +
+            : 기준선택자 - 계층선택자기호 - 변경할선택자
+        */
+        /* 6-1. body를 기준으로 모든 li요소의 글자크기를 20px로 */
+        body li {
+            font-size: 20px;
+        }
+
+        /* 6-2. li를 기준으로 해서 class명이 f인 글자색이 green */
+        li+.f {
+            color : green;
+        }
+
+        /* 6-3. li중에서 class가 java인 배경색 gray로 변경 */
+        li.java {
+            background-color : gray;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h2> 빅데이터반 </h2>
+    <ul>
+        <li class="java">박병관</li>
+        <li class="java f">임경남</li>
+        <li id="html" class="f">박수현</li>
+        <p class="java"> Java수업</p>
+        <li id="db">신인호</li>
+        <li class="f">테스트</li>
+        <li>강규남</li>
+    </ul>
+    
+</body>
+</html>
