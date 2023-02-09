@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex08_중간실습</title>
+
+    <style>
+        .block {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+        
+        .url {
+            display: none;
+        }
+        
+        a:hover {
+            color: red;
+        }
+
+        .block:hover+#naver {
+            display: inline-block;
+        }
+        .block:hover+#daum {
+            display: inline-block;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div>
+        <span class = "block">
+            <h1> <a href="https://www.naver.com/">  네이버 </a> </h1> 
+        </span>
+        <span class = "block url" id="naver">
+            <h1><sup> www.naver.com </sup> </h1>
+        </span>
+    
+    </div>
+
+    <div>
+        <span class = "block">
+            <h1> <a href="https://www.daum.net/">  다음 </a> </h1> 
+        </span>
+        <span class = "block url" id="daum" >
+            <h1> <sup>www.daum.net </sup></h1>
+        </span>
+    </div>
+
+</body>
+</html>
