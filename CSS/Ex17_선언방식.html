@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex17_선언방식</title>
+    <!--
+        2. 내부 방식: head요소에 style 요소를 사용해서 css 적용
+    -->
+
+    <style>
+        h2{
+            color: green; background-color: greenyellow;
+        }
+    </style>
+
+    <!-- 3. 외부방식 : link 태그를 사용해서 외부 css를 적용 -->
+    <!--    특징 1. link태그를 작성한 순서대로 css파일을 다운로드
+            특징 2. 병렬 다운로드를 지원 O
+            특징 3. link 태그가 많아지면 코드가 지저분해짐
+            특징 4. 가장 많이 사용되는 방식이다.
+         -->
+
+    <link rel="stylesheet" href="Ex17_외부css.css">
+    <!-- 4. import방식 : style 요소내에 @import 사용해서 외부 css를 적용 -->
+    <!--    특징 1. 다운로드 순서가 예측 불가능
+            특징 2. 병렬 다운로드를 지원 X
+            특징 3. 외부 css 파일이 많을 때 link태그보다 간결
+         -->
+         <style> 
+        @import url("Ex17_importcss.css");
+    </style>    
+    
+</head>
+<body>
+    <!-- 
+        1. 인라인 방식: html태그 내에 style 속성을 사용해서 스타일 지정
+                    : css 로 분리한 이유가 사라지므로 권장 X
+                    : 꼭 필요한 경우만 사용
+     -->
+
+    <h1 style="color: blue; background-color: antiquewhite;"> 인라인 방식 </h1>
+    <h2> 내부 방식 </h2>
+    <h3> 외부 방식 </h3>
+    <h4> import 방식 </h4>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex14_PostionAbsolute</title>
+
+    <style>
+        /* positon : absolute
+                -> static이 아닌 조상요소를 기준으로 해서 위치 설정
+                -> 만약, 조상이 전부 static 이라면 body가 기준이 됨
+        */
+
+        #parent{
+            height: 300px;
+            border: 10px solid black;
+            position: relative;
+        }
+
+        #child{
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+            /*  relative : 내 위치를 기준으로 이동
+                absolute : 부모요소 내에서 위치 선정 */
+            position: absolute;
+            /* position: relative; */
+            top: 20px;
+            right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="parent">
+        <div id="child">child</div>
+    </div>
+
+    
+</body>
+</html>
